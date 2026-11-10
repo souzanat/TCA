@@ -8,21 +8,34 @@ class filme {
 
         function adicionarFilme(nome, duraçao, nota, ano, data){
 
-            let filme = prompt("para cadastrar um filme, digite as seguintes informações: " +
-                                "nome: " +
-                                "duração: " +
-                                "nota: " +
-                                "ano: " +
-                                "data: ")
+            alert("para cadastrar um filme, digite as seguintes informações:");
+        
+            let nomeFilme = prompt("qual o nome do filme?")
+                this.nome.push(nomeFilme)
+
+            let duraçaoFilme = prompt("qual a duração do filme?")
+                this.duraçao.push(duraçaoFilme)
+
+            let notaFilme = prompt("qual a nota do filme?")
+                this.nota.push(notaFilme)
+
+            let anoFilme = prompt("qual o ano de lançamento do filme?")
+                this.ano.push(anoFilme)
+
+            let dataFilme = prompt("qual a data que você assistiu o filme?")
+                this.data.push(dataFilme)
+        
+            let filmeAdicionado = 
+            
             //fazer prompt pro usuario dar as informações
         
-            catalogo.push(filme);
+            catalogo.push(filmeAdicionado);
         
             alert("Filme adicionado!")
-        
         }
 
-        function pesquisarFilme(nome){
+
+        function pesquisarFilme(this.nome){
 
             let pesquisa = prompt("digite o filme que você quer pesquisar:");
         
@@ -40,8 +53,8 @@ class filme {
                 alert("filme não encontrado, faça o cadastro");
         
             }
-
-        }   
+        
+        }  
 
         }
 
@@ -70,4 +83,41 @@ new filme ('a bela adormecida', 75, 4, 1959, '12/06/2001'),
 
 ];
 
-let catalogo = ['o show de truman','backroom', 'anora', 'a espera de um milagre', 'divergente', 'como se fosse a primeira vez', 'minecraft', 'o diário de uma paixão', 'adoráveis mulheres', 'amiga do inimigo', 'bird box', 'tropa de elite', 'psicose', 'evil dead rise', 'corra', 'pearl', 'rua do medo: 1994', 'a bela adormecida', ];
+let catalogo = ['o show de truman','backrooms', 'anora', 'a espera de um milagre', 'divergente', 'como se fosse a primeira vez', 'minecraft', 'o diário de uma paixão', 'adoráveis mulheres', 'amiga do inimigo', 'bird box', 'tropa de elite', 'psicose', 'evil dead rise', 'corra', 'pearl', 'rua do medo: 1994', 'a bela adormecida', ];
+
+function adicionarFilme(nome, duraçao, nota, ano, data){
+
+    alert("para cadastrar um filme, digite as seguintes informações:");
+
+    let nomeFilme = prompt("qual o nome do filme?")
+        this.nome.push(nomeFilme)
+
+    let filme = 
+
+    //fazer prompt pro usuario dar as informações
+
+    catalogo.push(filme);
+
+    alert("Filme adicionado!")
+}
+
+function pesquisarFilme(nome){
+
+    let pesquisa = prompt("digite o filme que você quer pesquisar:");
+
+    for(let i = 0; i < catalogo.length; i++){
+        if(catalogo[i].nome == pesquisa){
+            alert("filme encontrado!" +
+                "nome: " + catalogo[i].nome +
+                "duração: " + catalogo[i].duraçao +
+                "nota: " + catalogo[i].nota +
+                "ano: " + catalogo[i].ano +
+                "data: " + catalogo[i].data)
+        }
+
+        else
+        alert("filme não encontrado, faça o cadastro");
+
+    }
+
+}  
