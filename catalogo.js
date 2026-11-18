@@ -129,7 +129,7 @@ class filme {
             }
 
 
-            alert(lista);
+            console.log(lista);
         }
 
 
